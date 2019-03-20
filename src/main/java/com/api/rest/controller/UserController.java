@@ -29,7 +29,7 @@ public class UserController {
 
 
     @RequestMapping(value = "users/{id}", method = RequestMethod.GET)
-    public ResponseEntity<User> getUser(@PathVariable Integer id) throws Throwable {
+    public ResponseEntity<User> getUser(@PathVariable Integer id)  {
         return userService.get(id);
     }
 
